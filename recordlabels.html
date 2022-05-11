@@ -9,10 +9,12 @@
 
 <nav>
     <a href="concerts.html"> Concerts </a>
-    <a href="artists.html"> Artists </a>
+    <a href="artists.html"> Artists </a>	
     <a href="venues.html"> Venues </a>
+    <a> Record Labels </a>
     <a href="ticketholders.html"> Ticketholders </a>
 </nav>
+
 
 <br />
 
@@ -21,7 +23,7 @@
   <thead>
     <tr>
         <th>ID</th>
-        <th>Name</th>
+        <th>Record Label</th>
     </tr>
   </thead>
   <tbody>
@@ -55,8 +57,8 @@
     <form method="POST" id="addRecordLabel">
         <legend><strong>Add New Record Label</strong></legend>
         <fieldset>
-            <label for="name"> Name: </label> 
-                <input type="text" id="name" name="name" required>
+            <label for="recordlabel"> Record Label: </label> 
+                <input type="text" id="recordlabel" name="recordlabel" required>
         </fieldset>
         <button type="submit"> Submit </button>
         <button> Cancel </button>
@@ -78,8 +80,8 @@
                     <option value="3"> 3 </option>
                     <option value="4"> 4 </option>
                 </select>
-            <label> Name: </label>
-                <input type="text" name="name" value="Foreign Family Collective" required>
+            <label> Record Label: </label>
+                <input type="text" name="recordlabel" value="Foreign Family Collective" required>
           </fieldset>
         <button type="submit"> Save Changes </button>
         <button> Cancel </button>
