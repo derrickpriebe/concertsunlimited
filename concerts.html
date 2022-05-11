@@ -8,6 +8,7 @@
 <h1>Concerts</h1>
 
 <nav>
+    <a> Concerts </a>	
     <a href="artists.html"> Artists </a>
     <a href="venues.html"> Venues </a>
     <a href="recordlabels.html"> Record Labels </a>
@@ -20,10 +21,10 @@
 <table>
   <thead>
     <tr>
-        <th>ID</th>
+        <th>Concert ID</th>
         <th>Date</th>
-        <th>Venue Name</th>
-        <th>Performing Artist(s)</th>
+        <th>Venue</th>
+        <th>Artist</th>
     </tr>
   </thead>
   <tbody>
@@ -61,6 +62,26 @@
 
 <br />
 
+<div class="search">
+    <form method="POST" id="searchConcert">
+        <legend><strong>Search Concerts</strong></legend>
+        <fieldset>
+            <label for="date"> Date: </label> 
+                <input type="date" id="date" name="date">
+            <label for="venue"> Venue: </label>
+                <select id="venue" name="venue" required>
+            	    <option value="0">&nbsp;</option>
+                    <option value="1"> Red Rocks </option>
+                    <option value="2"> Ryman Auditorium </option>
+                    <option value="3"> Stubbs </option>
+                    <option value="4"> 930 Club </option>
+                </select>
+        </fieldset>
+        <button type="submit"> Submit </button>
+        <button> Cancel </button>
+	</form> 
+</div>
+	
 <div class="create">
     <form method="POST" id="addConcert">
         <legend><strong>Add New Concert</strong></legend>
