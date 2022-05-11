@@ -9,6 +9,7 @@
 
 <nav>
     <a href="concerts.html"> Concerts </a>
+    <a> Artists </a>	
     <a href="venues.html"> Venues </a>
     <a href="recordlabels.html"> Record Labels </a>
     <a href="ticketholders.html"> Ticketholders </a>
@@ -21,7 +22,7 @@
   <thead>
     <tr>
         <th>ID</th>
-        <th>Name</th>
+        <th>Artist</th>
         <th>Record Label</th>
         <td><a href="#"> Delete </a></td>
     </tr>
@@ -61,8 +62,8 @@
     <form method="POST" id="addArtist">
         <legend><strong>Add New Artist</strong></legend>
         <fieldset>
-            <label for="name"> Name: </label> 
-                <input type="text" id="name" name="name" required>
+            <label for="artist"> Artist: </label> 
+                <input type="text" id="artist" name="artist" required>
             <label for="record label"> Record Label: </label>
                 <select id="record label" name="record label" required>
             	    <option value="0">&nbsp;</option>
@@ -92,8 +93,8 @@
                     <option value="3"> 3 </option>
                     <option value="4"> 4 </option>
                 </select>
-            <label> Name: </label>
-                <input type="text" name="name" value="Billie Eilish" required>
+            <label> Artist: </label>
+                <input type="text" name="artist" value="Billie Eilish" required>
             <label for="record label"> Record Label: </label> 
                 <select id="record label" name="record label" required>
                     <option value="0">&nbsp;</option>
